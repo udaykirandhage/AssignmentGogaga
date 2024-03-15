@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Assignment.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white   fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://static.wixstatic.com/media/2d34e5_1e4b2c2047144b8484c6e78ad38dcb9d~mv2.jpg/v1/fill/w_201,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GOGAGA%20NEW%20LOGO%20FINAL-01.jpg" class="gogaga-logo " />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#home">
+                        Home
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-check-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                            <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514" />
+                        </svg>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#exploreIndiaSection" id="navItem3">Indian Trips <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                        </svg></a>
+                    <a class="nav-link" href="#bookflight" id="navItem2">Book Flight <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAklJREFUSEvt1knIjlEUB/DfZx4yLLAyb5SykpCUjWQpQ1EyZkpEFkqKsrNQSham7GQIKTZKNjKUFQohw8KGKJGMz9H99Hjc932ft+/Tt3E3z3DvOf97z/n/z7kdemh09BCu/8DdGfnJeI23Oaf/ItR9cBQr8AXLcLYK3t3AfXER80tAHzAG78rgOeBRGImn+NRG7Acm0LkZm9U40Qx4OG5iUloU+XmB5+lZfY8c/sBgXMHsDOj7AnQc4vl7VE+8BQfQq+ZJI4cv09qJGZvvWIJzdXI8FjuLU67CgJobyC37hsU43y6rI8/bsbGIwrA2N9AUNHzVYXWABvg2BPHqjKU41WxhHeBO+wh7sHMHJrRAD3I+6i7g8NMfl5CTTBkn5q92F3Do9DLm1Ij1X7qtw+qc33ZAw35PwZ+97Zx4NA7icaG/B4Uc7hc191mSRK44RPG4V+h0SgXkGNbWBY7qcj1VmRrR/FWxluMOHlYMIr9NeVBm9dC0y6hesYlWYw2Op0WR+3JjCEZ3lt2sn5ycemNhKh7TG6BvwuHSXBDuWun7K6JTNRytdDwLuzGv5CG+92U83sa00v8ReNMIuRVw2A1KN4khycnKooCczDhchDOl/1NxtyvAYbs/Vax4P4TNGYfR0Z5gfJpbgAtdBQ6ZRU8O57cwo4HDDaXcb03SrE2uRps8ndrc5xT+6LXV0a9Qxqt0g6kS8I+1dXLcaTATN3AE69PNI7fJXUmO67rC6qpttMeyjHK+4xr0scnGftm0c+JmB2h7rseAfwI5jF8fJVo5KQAAAABJRU5ErkJggg==" class="icon-container" />
+                    </a>
+
+                    <a class="nav-link" href="#bookhotel" id="navItem4">Honey Moon <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZhJREFUSEvl1j9IF2EYwPHPL/+MLo4uhkOLrS5uRpBUCA612BK46eKkuAqKSxC41VRTIbg4SAXhIuGiOLkoTm4uTqZpvnAnP17O+91dv0Oh2973Hp7v8/99Gu7oa9wR170Gd+AROrGHq1ui9ACDuMA+/uRFM8/j0WvYAh6jK1Fyhl+YxVZyN4wlDKE7uTvHLubwPcuALHCABEUzLfL/LjFoqoXcMuaTSNyIZoFXMd7movuC1806Y/AEPrUZmqp7ha/poRkciugIfTWBD66dGsgCj+BHTdBUbSjA7XBo9nga72sGv8HnGBxaZLFm8CQ+xOC3+Fgz+AXWY3A/DmsEh6HSi9MYHM5rGKsJvoKbYRP38UPsoKfN8ONkjp9ktVN6F9pqI3kU2sEPj8YTbOZNrvTf06QI0sehqgEhr8/xLVaQ9zr9K/xWaFZxxYZVhedCi4CDTFl4S2hRcBl4WBReZuW0TI7Lhr0wtIzHrao9QJ/hZ9Hyr7JlxjkvDa3icez5ZVlP8yZX0WiFLfR31eWhSqiLGpYr9/+B/wL/F0cfaeSTzgAAAABJRU5ErkJggg==" class="icon-container" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+
+        <div class="banner-section-bg-container d-flex flex-column justify-content-center " id="home">
+            <div class="text-center pl-3 ml-2">
+                <h1 class="banner-heading mb-3 text-center ">Take a leap and make every moment count</h1>
+                <button class="custom-outline-button ">Customize my holiday <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg> </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="explore-menu-section pt-5 pb-5 mt-2" id="exploreIndiaSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading pb-3 text-center">Explore Indian Destinations</h1>
+                    <div class="pb-4">
+                        <input placeholder="Search your Destination" type="search" class="search-input w-100 pb-3" id="searchInput" />
+
+                    </div>
+                </div>
+                <br />
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3 pt-3">
+                        <img src="https://th.bing.com/th/id/R.83c1b3e11677f060f102275c3b437784?rik=JSjPnWy2%2bjHBzQ&riu=http%3a%2f%2ftajholidays.tajhotels.com%2fcontent%2fdam%2fthrp%2fdestinations%2fHyderabad%2f16x7intro%2fHyderabad-Intro-4X3.jpg&ehk=NUkf7LK5RmF8%2f9JFed6tnXIqp6ohedJf3DyNAuNDcFY%3d&risl=&pid=ImgRaw&r=0" class="menu-item-image w-100" />
+                        <p class="badge">4% off</p>
+                        <h1 class="menu-card-title">Hyderabad</h1>
+                        <p class="price">$1700.00</p>
+
+
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://th.bing.com/th/id/R.a9ce6c00dffd5e9720f7adcf4b199171?rik=e1vHjSx03yqT4g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-XSLQkx9WUY0%2fUejvivEdd5I%2fAAAAAAAADys%2fs2qaodyXo2I%2fs1600%2fchittorgarh-fort.jpg&ehk=HvP6aQ%2fsberydMorG7KyppGrl42OMt0H8zYZhVbrrLM%3d&risl=&pid=ImgRaw&r=0" class="menu-item-image w-100" />
+                        <p class="badge">12% off</p>
+                        <h1 class="menu-card-title">Rajasthan</h1>
+
+                        <p class="price">$2000.00</p>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://cdn.wallpapersafari.com/41/26/YJxVDg.jpg" class="menu-item-image w-100" />
+                        <p class="badge">10% off</p>
+                        <h1 class="menu-card-title">Kerala</h1>
+                        <p class="price">$1700.00</p>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.akshartours.com/wp-content/uploads/2020/07/Panaji-Beach.jpg" class="menu-item-image w-100" />
+                        <p class="badge">6% off</p>
+                        <h1 class="menu-card-title">Goa</h1>
+                        <p class="price">$2700.00</p>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.indiatravelpage.com/wp-content/uploads/2018/12/Manali-Manali-2.jpg" class="menu-item-image w-100" />
+                        <p class="badge">10% off</p>
+                        <h1 class="menu-card-title">Manali</h1>
+                        <p class="price">$3000</p>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://th.bing.com/th/id/OIP.H6_0i8fiaurTIcoNsbrBcwAAAA?rs=1&pid=ImgDetMain" class="menu-item-image w-100" />
+                        <p class="badge">Unlimited offers</p>
+                        <h1 class="menu-card-title">View More Destinations</h1>
+                        <p class="price">Low pricing and Best deals </p>
+                        <a href="" class="menu-item-link">
+                            View More
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="flight-section pt-5 pb-5" id="bookflight">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="text-center">
+                                    <img src="https://www.pngall.com/wp-content/uploads/11/Vector-Flying-Plane-PNG-Cutout.png" class="flight-section-img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+                                <h1 class="flight-section-heading">
+                                    Book your Flight Tickets!
+                                </h1>
+
+                                <div class="d-flex flex-row "> <input placeholder="From" type="search" class="search-input-flight w-100 pr-3 text-center" id="searchInput" /> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input placeholder="To" type="search" class="search-input-flight w-100 pl-3 text-center" id="searchInput" />
+                                </div><br />
+                                <input placeholder="Date" type="date" class="search-input-flight w-100 p-3 text-center" id="searchInput" />
+                                <br><br>
+                                <input placeholder="Coupon code " type="text" class="search-input-flight w-100 p-3 text-center" id="searchInput" />
+                                <br><br>
+                                <button class="custom-button">Book Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thanking-customers-section pt-5 pb-5 w-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                                <h1 class="thanking-customers-section-heading">
+
+                                    Travel Gift card
+                                </h1>
+                                <p class="thanking-customers-section-description">
+                                    To make your every moment memorable choose our Travel Gift Card, one point solution for unforgettable memories. Our Gift card is filled with bundle of surprises for a lifetime.
+                                </p>
+                                <div class="d-md-none">
+                                    <img src="https://static.wixstatic.com/media/2d34e5_c7e16499319249ae8ef382487507d23c~mv2.jpeg/v1/fill/w_543,h_343,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Gift%20Card1.jpeg" class="thanking-customers-section-img" />
+                                </div>
+                                <div>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog mt-5">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="https://static.wixstatic.com/media/2d34e5_c7e16499319249ae8ef382487507d23c~mv2.jpeg/v1/fill/w_543,h_343,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Gift%20Card1.jpeg" id="exampleModalLabel">
+                                                        Gift Voucher
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="https://static.wixstatic.com/media/2d34e5_c7e16499319249ae8ef382487507d23c~mv2.jpeg/v1/fill/w_543,h_343,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Gift%20Card1.jpeg" class="w-100" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 d-none d-md-block">
+                                <img src="https://static.wixstatic.com/media/2d34e5_c7e16499319249ae8ef382487507d23c~mv2.jpeg/v1/fill/w_543,h_343,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Gift%20Card1.jpeg" class="thanking-customers-section-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="menu-section-heading text-center mt-4 mb-5 col-12 p-3">
+                    <marquee behaviour="Available">Gogaga Your Travelling partner!
+                </h1>
+                </marquee>
+
+                <h1 class="menu-section-heading text-center mt-5 mb-5 col-12">Book Your Hotels at the best prices! </h1>
+
+
+                <div class="flight-section pt-5 pb-5" id='bookhotel'>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-6">
+                                <div class="text-center ">
+
+                                    <img src="https://tripplus.in/wp-content/uploads/2022/08/2346824-1024x628.jpg" class="flight-section-img" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 ">
+
+
+                                <div class="d-flex flex-row "> <input placeholder="From" type="date" class="search-input-flight w-100 pr-3 text-center" id="searchInput" /> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input placeholder="To" type="date" class="search-input-flight w-100 pl-3 text-center" id="searchInput" />
+                                </div><br />
+                                <input placeholder="Location" type="text" class="search-input-flight w-100 p-3 text-center" id="searchInput" />
+                                <br><br>
+                                <input placeholder="Coupon code " type="text" class="search-input-flight w-100 p-3 text-center" id="searchInput" />
+                                <br><br>
+                                <button class="custom-button">Book hotel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img src="https://static.wixstatic.com/media/2d34e5_1e4b2c2047144b8484c6e78ad38dcb9d~mv2.jpg/v1/fill/w_201,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GOGAGA%20NEW%20LOGO%20FINAL-01.jpg" class="gogaga-logo" />
+                                <h1 class="footer-section-mail-id">gogaga@gmail.com</h1>
+                                <p class="footer-section-address">
+                                    123 Ayur Vigyan Nagar, New Delhi, India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </body>
+
+
+
+
+
+
+</body>
+
+</html>

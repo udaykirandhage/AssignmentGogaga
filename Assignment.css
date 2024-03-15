@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.body {
+    margin: 0px;
+}
+
+
+.gogaga-logo {
+    width: 100px;
+    height: 70px;
+}
+
+.icon-container {
+
+    width: 20px;
+    height: 25px;
+
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    padding-right: 25px;
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    padding-right: 25px;
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    padding-right: 25px;
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    padding-right: 25px;
+}
+
+.banner-section-bg-container {
+    background-image: url("https://images.hdqwalls.com/wallpapers/nature-beach-wallpaper.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+
+}
+
+.menu-section-heading {
+    color: #183b56;
+
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.banner-caption {
+    color: white;
+    padding-top: 15px;
+    font-family: "Neue Helvetica";
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.banner-heading {
+    padding-bottom: 29px;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.custom-outline-button {
+
+    color: white;
+    background-color: transparent;
+    width: 199px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: orange;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.explore-menu-section {
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: ;
+}
+
+.menu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu-item-image {
+    border-radius: 16px;
+    height: 250px;
+
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+}
+
+.healthy-food-section {
+    background-color: #f9fbfe;
+}
+
+.healthy-food-section-img {
+    width: 270px;
+}
+
+.healthy-food-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.healthy-food-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.search-input {
+    border-radius: 3px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5cdcd;
+    font-size: 18px;
+    padding-bottom: 20px;
+
+
+}
+
+.badge {
+    background-color: #f7941d;
+    color: white;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+
+.custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.flight-section {
+    background-color: #f9fbfe;
+    padding-top: 10px;
+}
+
+.flight-section-img {
+    width: 370px;
+}
+
+.flight-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.flight-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.search-input-flight {
+    border-radius: 2px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d5cdcd;
+    font-size: 18px;
+    padding-right: 20px;
+    height: 40px;
+    width: 100px;
+
+
+}
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fff8db, #fae38c);
+    width: 100vw;
+    margin: 0px;
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+
+
+.footer-section {
+    background-color: #e9f5f8;
+    width: 100vw;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
